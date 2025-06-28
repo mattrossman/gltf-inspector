@@ -1,0 +1,43 @@
+:root {
+  --page-background: #161616;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: var(--page-background);
+  padding: 20px 30px;
+  color: white;
+  font-family: monospace;
+}
+
+#instructions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+#editor-root {
+  position: absolute;
+  inset: 0;
+}
+
+#editor-root > * {
+  height: 100%;
+}
+
+#loading {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  inset: 0;
+}
